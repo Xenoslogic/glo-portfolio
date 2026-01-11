@@ -1,0 +1,35 @@
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.wrapper {
+    max-width: 860px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 5px;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-list-item {
+    display: inline-block;
+    margin-right: 24px;
+    font-weight: 400;
+    color: #BF7506;
+}
+.nav-list-item:nth-last-child(1) {
+    margin-right: 0;
+}
+.nav-list-item.active {
+    font-weight: 700;
+}
