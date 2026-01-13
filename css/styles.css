@@ -1,35 +1,133 @@
 body {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
 }
 ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  max-width: 100%;
 }
 .wrapper {
-    max-width: 860px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 5px;
+  max-width: 870px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 5px;
 }
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .nav-list-item {
-    display: inline-block;
-    margin-right: 24px;
-    font-weight: 400;
-    color: #BF7506;
+  display: inline-block;
+  margin-right: 24px;
+  font-weight: 400;
+  color: #bf7506;
 }
 .nav-list-item:nth-last-child(1) {
-    margin-right: 0;
+  margin-right: 0;
 }
 .nav-list-item.active {
-    font-weight: 700;
+  font-weight: 700;
+}
+/* MAIN */
+.promo {
+  display: flex;
+  align-items: center;
+}
+.promo-avatar {
+  width: 212px;
+  height: 240px;
+}
+.promo-text {
+    max-width: 510px;
+}
+.promo-text p {
+  font-size: 48px;
+  font-weight: 700;
+}
+.promo-heading {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 135%;
+}
+.promo-heading-top {
+  color: #bf7506;
+}
+.promo-socials {
+  display: flex;
+  align-items: center;
+}
+.promo-socials-list {
+  margin-right: 60px;
+}
+.promo-socials-item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+.promo-socials-item:nth-last-child(1) {
+  margin-right: 0;
+}
+.cv-download-link {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+}
+.cv-download-link::before {
+  content: url(../images/cv-icon.png);
+}
+
+.projects-heading {
+  font-weight: 700;
+  font-size: 48px;
+  color: #bf7506;
+}
+.card-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card {
+  width: 400px;
+}
+.card-heading {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 135%;
+  color: #bf7506;
+}
+.using-techs-item {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  margin-right: 5px;
+  border: 1px solid #bf7506;
+  border-radius: 4px;
+  padding: 5px 8px 4px;
+}
+.card-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+.card-examples-link {
+  display: inline-block;
+  margin-right: 25px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+}
+.code-link::before {
+    content: url(../images/code-icon.png);
+}
+.demo-link::before {
+    content: url(../images/demo-icon.png);
 }
