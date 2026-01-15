@@ -102,6 +102,8 @@ img {
   font-size: 16px;
   font-weight: 700;
   line-height: 150%;
+  border: none;
+  border-bottom: 2px solid #bf7506;
 }
 
 .cv-download-link::before {
@@ -191,7 +193,7 @@ img {
   max-width: 450px;
 }
 
-.about-text p {
+.about-p {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
@@ -231,6 +233,9 @@ img {
 }
 
 /* CONTACT FORM */
+.contact-form-wrapper {
+  position: relative;
+}
 .contact-form {
   margin-bottom: 125px;
 }
@@ -268,8 +273,13 @@ img {
   border: none;
   border-bottom: 2px solid #bf7506;
   margin-left: auto;
-  
+  cursor: pointer;  
 }
 .btn-submit::before {
   content: url(../images/submit-icon.svg);
+}
+.contact-head-image {
+  position: absolute;
+  right: -190px;
+  bottom: -83px;
 }

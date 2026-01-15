@@ -12,6 +12,8 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="./css/normalise.css" />
   <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/adaptive.css">
+  <script src="./js/main.js" defer></script>
 </head>
 <!-- HEADER -->
 <div class="wrapper">
@@ -19,10 +21,10 @@
     <div class="logo"><img src="./images/logo.svg" alt="логотип" /></div>
     <nav class="header-nav">
       <ul class="nav-list">
-        <li class="nav-list-item active"><a href="#" class="nav-list-link">Главная</a></li>
-        <li class="nav-list-item"><a href="#" class="nav-list-link">Проекты</a></li>
-        <li class="nav-list-item"><a href="#" class="nav-list-link">Обо мне</a></li>
-        <li class="nav-list-item"><a href="#" class="nav-list-link">Связаться</a></li>
+        <li class="nav-list-item active"><a href="index.html" class="nav-list-link">Главная</a></li>
+        <li class="nav-list-item"><a href="#projects" class="nav-list-link">Проекты</a></li>
+        <li class="nav-list-item"><a href="#about-me" class="nav-list-link">Обо мне</a></li>
+        <li class="nav-list-item"><a href="#contact" class="nav-list-link">Связаться</a></li>
       </ul>
     </nav>
   </header>
@@ -54,12 +56,12 @@
             <li class="promo-socials-item"><a href="#" class="promo-socials-link"><img
                   src="./images/social-icons/youtube.svg" alt="youtube"></a></li>
           </ul>
-          <a href="#" class="cv-download-link">Скачать резюме</a>
+          <a href="#" class="cv-download-link" download="#">Скачать резюме</a>
         </div>
       </div>
     </section>
     <!-- PROJECTS -->
-    <section class="projects">
+    <section class="projects" id="projects">
       <h2 class="projects-heading">
         Последние проекты
       </h2>
@@ -102,7 +104,7 @@
       </div>
     </section>
     <!-- ABOUT ME -->
-    <section class="about">
+    <section class="about" id="about-me">
       <div class="about-info">
         <div class="about-image">
           <img src="./images/prog-man.webp" alt="моя фотография">
@@ -110,9 +112,9 @@
         <div class="about-text">
           <p class="about-inter">Рад вас видеть</p>
           <h2 class="about-heading">Я Дмитрий Сердцев</h2>
-          <p>Я разрабатываю сайты для людей и компаний. Делаю всё сам: составляю прототип, дизайн-макет, пишу код.</p>
+          <p class="about-p">Я разрабатываю сайты для людей и компаний. Делаю всё сам: составляю прототип, дизайн-макет, пишу код.</p>
           <span>Код, Дизайн, Обучение</span>
-          <p>Могу собрать страницу для вашей компании, даже если запускать её нужно уже завтра. Из инструментов есть:
+          <p class="about-p">Могу собрать страницу для вашей компании, даже если запускать её нужно уже завтра. Из инструментов есть:
             Tilda, Webflow, Figma, HTML, CSS, JavaScript и Wordpress</p>
           <div class="sign-image"><img src="./images/sign.png" alt="подпись"></div>
         </div>
@@ -132,22 +134,28 @@
         </div>
       </div>
     </section>
+  </div>
     <!-- CONTACT FORM -->
-     <section class="contact-form">
+    <div class="wrapper contact-form-wrapper">
+     <section class="contact-form" id="contact">
       <div class="form-wrapper">
         <h2 class="contact-form-heading">Готов обсудить проект...</h2>
       <form class="form" action="#">
         <label for="user-name" hidden>Имя</label>
-        <input type="text" id="user-name" required placeholder="Имя">
+        <input type="text" id="user-name" name="client_name" placeholder="Имя">
         <label for="user-email" hidden>Email</label>
-        <input type="email" name="user-email" id="user-email" required placeholder="Email">
-        <textarea name="user-message" id="user-message" placeholder="Сообщение"></textarea>
+        <input type="email" name="client_email" id="user-email" required placeholder="Email">
+        <textarea name="client_message" id="user-message" placeholder="Сообщение"></textarea>
         <button type="submit" class="btn-submit">Отправить</button>
       </form>
       </div>
      </section>
+     <div class="contact-head-image">
+      <img src="./images/hand-image.png" alt="картинка руки">
+     </div>
+    </div>
   </main>
-</div>
+
 </body>
 
 </html>
